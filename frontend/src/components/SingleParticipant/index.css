@@ -1,0 +1,24 @@
+.SingleParticipantComponent {
+  height: 100%;
+  width: 100%;
+}
+.SingleParticipantComponent .ParticipantName {
+  color: blue;
+}
+.SingleParticipantComponent .ParticipantNameContainer {
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  position: absolute;
+  margin: 5px;
+}
+.SingleParticipantComponent .ParticipantVideo {
+  background-image: url(https://imgur.com/J4Hd08T.png);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.SingleParticipantComponent .Container {
+  position: relative;
+}

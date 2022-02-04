@@ -1,0 +1,17 @@
+.FloatingButtonContainer {
+  display: flex;
+  height: 200px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+}
+.FloatingButtonContainerBackdrop {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(0deg, #000, transparent);
+  top: 0px;
+  left: 0px;
+}

@@ -1,0 +1,12 @@
+.Participant .SplitContainer {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: flex;
+}
+.Participant .SplitContainer .AllParticipantContainer {
+  flex-grow: 2;
+}
+.Participant .SplitContainer .MainContainer {
+  flex-grow: 5;
+}
