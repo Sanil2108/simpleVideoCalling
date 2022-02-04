@@ -81,6 +81,7 @@ function Host(): ReactElement {
    
     getInstance().listen("connect", createMeeting)
     
+    // TODO:
     // getInstance().listen("disconnect", () => createMeeting)
     
     getInstance().listen("meeting_update", updateMeeting)

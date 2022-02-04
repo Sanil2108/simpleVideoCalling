@@ -1,7 +1,8 @@
 const {
-  getInstance: getMeetingDriverInstance,
   initialize: initializeMeetingDriver
 } = require('./meetingDriver/meetingDriver')
+
+require('dotenv').config();
 
 const express = require('express');
 const app = express();
@@ -16,6 +17,6 @@ app.get('/', (req, res) => {
 // Set up meeting driver
 initializeMeetingDriver(server)
 
-server.listen(8000, () => {
-  console.log('listening on *:3000');
+server.listen(process.env.PORT, () => {
+  console.log(`listening on ${process.env.PORT}`);
 });

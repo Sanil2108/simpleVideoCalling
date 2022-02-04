@@ -6,7 +6,7 @@ class SocketDriver {
     }
 
     connect() {
-        this.socket = io("http://localhost:8000");
+        this.socket = io(`http://api.videocaller.sanilk.xyz`);
     }
 
     sendMessage(eventName, data) {
