@@ -1,14 +1,14 @@
 branch-defaults:
   default:
-    environment: null
+    environment: Videocallingbackend-env
     group_suffix: null
 global:
-  application_name: .
+  application_name: VideoCallingBackend
   branch: null
   default_ec2_keyname: current-main-kp
   default_platform: Docker running on 64bit Amazon Linux 2
   default_region: ap-south-1
-  include_git_submodules: true
+  include_git_submodules: false
   instance_profile: null
   platform_name: null
   platform_version: null
