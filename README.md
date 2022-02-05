@@ -50,4 +50,6 @@ The tech stack used for frontend is
 4. Infrastructure as code can be added to version control the AWS infra
 5. Better storage and use of AWS credentials. Right now, AWS credentials are stored as secrets in Github actions and are only utilised during the building and deploying stage. This is better than having them anywhere in the code in plaintext, however credentials of my personal account are being used. A better approach might be role based authentication and authorization so auditing tools(such as CloudTrail) can log who is performing what action.
 6. Missed the functionality for the host to be able to remove any participant from the video call. However this can be easily added by the host sending a request to the server with the participantID and the server removing the participant.
-7. Could set up Route53 or some other DNS service to have a much nicer URL, such as videocalling.sanilk.xyz
+7. Could set up Route53 or some other DNS service to have a much nicer URL, such as videocalling.sanilk.xyz.
+8. Different deployment modes. Right now, all the URLs are hardcoded. In production environment, I'd want have different environments, one for local, dev and main.
+9. Could add favicon
