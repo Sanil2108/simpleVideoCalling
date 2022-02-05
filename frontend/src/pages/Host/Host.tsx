@@ -15,7 +15,7 @@ import CallEndIcon from '@mui/icons-material/CallEnd';
 
 import { getInstance, initialize } from "../../socketDriver";
 
-const MAX_PARTICIPANTS = 5
+const MAX_PARTICIPANTS = 4
 
 function Host(): ReactElement {
   const [meetingId, setMeetingId] = useState("")
@@ -95,7 +95,7 @@ function Host(): ReactElement {
     <div className="Host" style={{ 'background': '#000', 'position': 'relative', 'height': '100vh' }}>
       <NameModal open={!name} onNameInput={name => setName(name)} />
       {
-        participantData.length < 4 ?
+        participantData.length < MAX_PARTICIPANTS ?
         <Alert sx={{ 'top': 20, 'left': 20, 'position': 'absolute' }} severity="success" color="info">
           Your meeting created. Send this link for participants to join - <a target="_blank" href={`http://localhost:3000/${meetingId}`}>localhost:3000/{meetingId}</a>
         </Alert> :
