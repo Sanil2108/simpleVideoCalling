@@ -6,7 +6,7 @@ class SocketDriver {
     }
 
     connect() {
-        this.socket = io(`http://Videocallingbackend-env.eba-u8accu3s.ap-south-1.elasticbeanstalk.com`);
+        this.socket = io(`http://localhost:8000`);
     }
 
     sendMessage(eventName, data) {

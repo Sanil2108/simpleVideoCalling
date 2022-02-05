@@ -97,7 +97,7 @@ function Host(): ReactElement {
       {
         participantData.length < MAX_PARTICIPANTS ?
         <Alert sx={{ 'top': 20, 'left': 20, 'position': 'absolute' }} severity="success" color="info">
-          Your meeting created. Send this link for participants to join - <a target="_blank" href={`http://sanilk.xyz.videocalling.s3-website.ap-south-1.amazonaws.com/${meetingId}`}>http://sanilk.xyz.videocalling.s3-website.ap-south-1.amazonaws.com/{meetingId}</a>
+          Your meeting created. Send this link for participants to join - <a target="_blank" href={`http://localhost:3000/${meetingId}`}>localhost:3000/{meetingId}</a>
         </Alert> :
         <Alert sx={{ 'top': 20, 'left': 20, 'position': 'absolute' }} severity="warning">
           Maximum number of participants reached
