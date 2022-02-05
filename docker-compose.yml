@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  backend:
+    image: ${API_IMAGE}
+    ports:
+      - 80:80
