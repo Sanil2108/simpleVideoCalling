@@ -47,6 +47,7 @@ jobs:
           mkdir -p deployment
           cp docker-compose.temp.yml deployment/docker-compose.yml
           zip -r -j deployment.zip deployment/docker-compose.yml
+          cat deployment/docker-compose.yml
 
       - name: Deploy to Elastic Beanstalk
         uses: hmanzur/actions-aws-eb@v1.0.0
