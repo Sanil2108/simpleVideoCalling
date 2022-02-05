@@ -6,6 +6,17 @@ This is a simple application that uses websockets to establish a persistent conn
 
 The server side code also ensures that the request is coming from the host when performing actions and not from the participants.
 
+## Running the application locally
+```
+cd backend
+npm run start
+```
+
+```
+cd frontend
+npm run start
+```
+
 # Features
 
 ## Mute all functionality
