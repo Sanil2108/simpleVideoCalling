@@ -6,7 +6,7 @@ class SocketDriver {
     }
 
     connect() {
-        this.socket = io(`http://api.videocaller.sanilk.xyz`);
+        this.socket = io(`http://Videocallingbackend-env.eba-u8accu3s.ap-south-1.elasticbeanstalk.com`);
     }
 
     sendMessage(eventName, data) {
