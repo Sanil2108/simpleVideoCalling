@@ -59,12 +59,12 @@ jobs:
           AWS_DEFAULT_REGION: ap-south-1"
 
       - name: Build frontend
-        working-directory: ./backend
+        working-directory: ./frontend
         run: |
           npm run build
 
       - name: Deploy frontend to S3
-        working-directory: ./backend
+        working-directory: ./frontend
         run: |
           aws s3 sync build/ s3://sanilk.xyz.videocalling
 
