@@ -2,6 +2,8 @@
 
 ## Check out the currently running version - http://sanilk.xyz.videocalling.s3-website.ap-south-1.amazonaws.com/
 
+## The app on the live link seems to work fine, but in case it crashes, here is a video demo of me using this app - https://vimeo.com/674173085
+
 This is a simple application that uses websockets to establish a persistent connection between host and participants. Host creates the meeting and can then share the meeting link with participants. Whenever the host or a participant joins, they provide their name.
 
 The server side code also ensures that the request is coming from the host when performing actions and not from the participants.
